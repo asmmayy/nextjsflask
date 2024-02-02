@@ -32,7 +32,7 @@ const SignupForm = () => {
             setLoading(true);
             // const response = await fetch('/api/users/register', {
             // const response = await fetch(`${link}/signup`, {
-            const response = await fetch(`https://flask-hello-world-omega-ivory.vercel.app/signup`, {
+            const response = await fetch(`https://flaskapinextjs.vercel.app/signup`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
     try {
         // const response = await fetch("https://flask-hello-world-new-neon.vercel.app/login", {
-        const response = await fetch("https://flask-hello-world-omega-ivory.vercel.app/login", {
+        const response = await fetch("https://flaskapinextjs.vercel.app/login", {
         // const response = await fetch(`${link}/login`, {
             method: 'POST',
             headers: {

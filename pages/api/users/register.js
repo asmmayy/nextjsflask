@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
     try {
         // const response = await fetch("https://flask-hello-world-new-neon.vercel.app/signup", {
-        const response = await fetch("https://flask-hello-world-omega-ivory.vercel.app/signup", {
+        const response = await fetch("https://flaskapinextjs.vercel.app/signup", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         formData.append("lookup_key", lookup_key);
         formData.append("user_id", user_id);
         // const response = await fetch("https://flask-hello-world-new-neon.vercel.app/create-checkout-session", {
-        const response = await fetch("https://flask-hello-world-omega-ivory.vercel.app/create-checkout-session", {
+        const response = await fetch("https://flaskapinextjs.vercel.app/create-checkout-session", {
             method: 'POST',
             body: formData
         });

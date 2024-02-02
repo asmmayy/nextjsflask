@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         let formData = new FormData();
         formData.append("session_id", session_id);
         // const response = await fetch("https://flask-hello-world-new-neon.vercel.app/create-portal-session", {
-        const response = await fetch("https://flask-hello-world-omega-ivory.vercel.app/create-portal-session", {
+        const response = await fetch("https://flaskapinextjs.vercel.app/create-portal-session", {
             method: 'POST',
             body: formData
         });
