@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app-background {
+    background-color: white;
+}
+
+p {
+    @apply text-white text-base font-light;
+}
+
+@keyframes dotAnimation {
+    0%, 20% {
+      content: "";
+    }
+    40% {
+      content: ".";
+    }
+    60% {
+      content: "..";
+    }
+    80%, 100% {
+      content: "...";
+    }
+}
+  
+
+#customerReview .accordion-item .accordion-button.collapsed,
+.servicePage .accordion-item .accordion-button.collapsed {
+  border-radius: 10px !important;
+}
+
+#customerReview .accordion-item .accordion-button,
+.servicePage .accordion-item .accordion-button {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.review_item .paragraph_text {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.profile_img_div img {
+  width: 61px;
+  height: 61px;
+}
+
+.slick-slide {
+  width: 362px !important;
+}
+
+.reviews_followers {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #b2b900;
+}
+
+.reviews_username {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.text-454545 {
+  color: #454545;
+}
+
+.display_table_cell {
+  display: table-cell;
+}
+
+.profile_img_div {
+  padding-right: 5px;
+  width: 72px;
+}
+
+.review_item .table {
+  width: 100%;
+}
+
+.verify_text {
+  letter-spacing: 1.4px;
+  color: #3897f1;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.reviews_verified {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #3897f1;
+  text-transform: uppercase;
+}
+
+.display_table_cell {
+  display: table-cell;
+}
+
+.profile_img_div {
+  padding-right: 5px;
+  width: 72px;
+}
+
+.review_item .table {
+  width: 100%;
+}
+
+.paragraph_text {
+  line-height: 22px;
+  letter-spacing: .45px;
+  font-family: source sans pro, Sans-serif;
+}
+
+.text-707070 {
+  color: #707070;
+}
+
+.review_item {
+  width: 347px !important;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#formSec input[type=text],
+#formSec input[type=email],
+#formSec input[type=number],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+
+#formSec input:focus,
+#formSec textarea:focus {
+  color: #3385d7;
+  background-color: rgba(212, 228, 246, 1) !important;
+  border-color: #d5e5ee;
+  border: none !important;
+  outline: none !important;
+  caret-color: #1f2e88;
+
+}
+
+#formSec input[type=submit] {
+  background-color: #3385d7;
+  padding: 16px 42px;
+  border-width: 0px;
+  transition: 300ms;
+  border-radius: 36px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  caret-color: #1f2e88;
+  border: none;
+  cursor: pointer;
+}
+
+#formSec input[type=submit]:hover {
+  background-color: #5ea0e8;
+}
+
+#formSec form {
+  padding: 80px 40px 0px;
+  background-color: #ffffff;
+  margin-top: -60px;
+  border-radius: 50px;
+  box-shadow: 2px 44px 32px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 60px;
+  transform: translateY(-35px);
+
+}
+
+.loadingText::after {
+  animation: dotAnimation 1.5s infinite;
+  content: "";
+  display: inline-block;
+  width: 1ch;
+}
+
+/* Add this to your CSS file */
+.btn-disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Ensure the hover effect is not applied when the button is disabled */
+.btn-disabled:hover {
+  background-color: gray;
+}
+
+/* Original button styles (for reference) */
+.bg-blue-500 {
+  background-color: blue; /* Your original blue color */
+}
+
+.bg-blue-500:hover, .bg-blue-600:hover {
+  background-color: darkblue; /* Your original hover color */
+}
+.CookieConsent {
+  background-color: black ! important ;
+  }
