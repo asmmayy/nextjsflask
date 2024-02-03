@@ -9,6 +9,8 @@ import fb_icon from "../public/assets/Icons/fb_icon.png";
 import insta_icon from "../public/assets/Icons/insta_icon.png";
 import twitter_icon from "../public/assets/Icons/twitter_icon.png";
 import tiktok_icon from "../public/assets/Icons/tiktok_icon.png";
+import easytofastschool from "../public/assets/Images/easytofastschool.jpg"
+import fastschool from "../public/assets/Images/fastschool.jpg"
 
 export const LOGOS = {
     fastSchool_logo,
@@ -16,7 +18,9 @@ export const LOGOS = {
 }
 
 export const IMAGES = {
-    defaultUser_img
+    defaultUser_img,
+    easytofastschool,
+    fastschool
 }
 
 export const ICONS = {

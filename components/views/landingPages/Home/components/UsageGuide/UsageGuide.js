@@ -1,5 +1,9 @@
 import { LOGOS } from "@/shared/constants";
-console.log(LOGOS.fastSchool_logo_black,"hell")
+// console.log(LOGOS.fastSchool_logo_black,"hell")
+import Image from "next/image";
+import { IMAGES } from "@/shared/constants";
+
+
 const UsageGuide = () => {
     return (
         <div className="flex flex-col justify-center items-center sm:gap-[7rem] gap-[4rem]">
@@ -7,7 +11,7 @@ const UsageGuide = () => {
                 className="flex lg:flex-row flex-col items-center justify-between max-w-5xl mx-auto gap-4 p-6 rounded-2xl border border-gray-300 shadow-lg shadow-slate-600"
             >
                 <div className="lg:w-[40%] w-[90%] max-w-[20rem] min-h-[15rem] border border-gray-400 rounded-md">
-                    <img src={`assets/images/pci1 (1).jpg`} width="100%" />
+                    <Image alt="" src={IMAGES.easytofastschool} width="100%" />
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full" data-aos-delay="50" data-aos-duration="1000"
                     data-aos-easing="ease-in-sine" data-aos="flip-down" data-aos-once="false">
@@ -24,7 +28,7 @@ const UsageGuide = () => {
             >
                 <div className="lg:w-[40%] w-[90%] min-h-[15rem] border border-gray-400 rounded-md">
                     {/* <img className="main-img" src="https://enlightio.com/wp-content/uploads/2022/06/why-are-lesson-plans-important-for-teachers.jpg"width="100%" /> */}
-                    <img className="main-img" src={`/assets/images/pci1.jpg`} width="100%" />
+                    <Image alt=""  className="main-img" src={IMAGES.fastschool} width="100%" />
 
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full"
