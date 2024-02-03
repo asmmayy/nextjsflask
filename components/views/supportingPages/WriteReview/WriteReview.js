@@ -69,7 +69,10 @@ function WriteReview() {
                         <button
                             disabled={isLoading}
                             type="submit"
-                            className="bg-black mt-2 text-white lg:text-lg text-sm uppercase rounded-[100px] px-4 py-3 focus:outline-none w-1/2 border border-[#000] transition duration-200 ease-in-out hover:bg-[#2796e5]"
+                            className="bg-black mt-2
+                             text-white lg:text-lg text-sm 
+                             uppercase rounded-[100px] px-4 py-3 
+                             focus:outline-none w-1/2 border border-[#000] transition duration-200 ease-in-out hover:bg-[#2796e5]"
                         >
                             {isLoading ? "Caricamento" : "Inviare"}
                         </button>

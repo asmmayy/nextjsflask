@@ -34,7 +34,8 @@ const CustomerReviews = () => {
                 redirect: 'follow'
             };
 
-            fetch(`${link}/reviews`, requestOptions)
+            // fetch(`${link}/reviews`, requestOptions)
+            fetch(`https://flaskapinextjs.vercel.app/reviews`, requestOptions)
                 .then(response => response.json())
                 .then(result => setDefaultData(result))
                 .catch(error => console.log('error', error));
@@ -110,24 +111,24 @@ const CustomerReviews = () => {
 
                 <Slider slickPlay {...settings}>
             {defaultData.map((review, index) => (
-                    <div class="review_item" key={index}>
-                        <div class="flex flex-col md:flex-row">
-                            <div class="md:w-2/3 text-left px-4 table">
-                                <div class="profile_img_div display_table_cell align-middle">
+                    <div className="review_item" key={index}>
+                        <div className="flex flex-col md:flex-row">
+                            <div className="md:w-2/3 text-left px-4 table">
+                                <div className="profile_img_div display_table_cell align-middle">
                                     <img src={review.customerImg} />
                                 </div>
-                                <div class="profile_text_div border-0 display_table_cell align-middle">
-                                    <div class="text-454545 reviews_username">{review.customerName}</div>
+                                <div className="profile_text_div border-0 display_table_cell align-middle">
+                                    <div className="text-454545 reviews_username">{review.customerName}</div>
                                 </div>
                             </div>
-                            <div class="md:w-1/3 text-center pt-4 px-4">
-                                <div class="reviews_verified">
-                                    <span class="verify_text">VERIFIED</span>
+                            <div className="md:w-1/3 text-center pt-4 px-4">
+                                <div className="reviews_verified">
+                                    <span className="verify_text">VERIFIED</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="!pt-2">
-                            <div class="paragraph_text text-left text-707070">{review.customerReview}</div>
+                        <div className="!pt-2">
+                            <div className="paragraph_text text-left text-707070">{review.customerReview}</div>
                         </div>
                     </div>
 

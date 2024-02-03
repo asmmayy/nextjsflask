@@ -49,7 +49,7 @@ const LoginForm = () => {
                         <button onClick={()=>setIsHidePassword(!isHidePassword)} type='button' className='absolute inset-y-0 right-3'>
                             {
                                 !isHidePassword ? <i className="fa fa-eye" aria-hidden="true"></i> :
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                <i className="fa fa-eye-slash" aria-hidden="true"></i>
                             }
                         </button>
                     </div>

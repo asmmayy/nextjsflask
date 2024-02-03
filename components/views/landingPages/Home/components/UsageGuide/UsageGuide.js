@@ -7,7 +7,8 @@ const UsageGuide = () => {
                 className="flex lg:flex-row flex-col items-center justify-between max-w-5xl mx-auto gap-4 p-6 rounded-2xl border border-gray-300 shadow-lg shadow-slate-600"
             >
                 <div className="lg:w-[40%] w-[90%] max-w-[20rem] min-h-[15rem] border border-gray-400 rounded-md">
-                    <img src="/_next/static/media/AI-image-1.14e550f1.jpg" width="100%" />
+                    {/* <img src="/_next/static/media/AI-image-1.14e550f1.jpg" width="100%" /> */}
+                    <img src="/assets/images/pci1 (1).jpg" width="100%" />
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full" data-aos-delay="50" data-aos-duration="1000"
                     data-aos-easing="ease-in-sine" data-aos="flip-down" data-aos-once="false">
@@ -23,7 +24,8 @@ const UsageGuide = () => {
                 className="flex lg:flex-row-reverse flex-col items-center justify-between max-w-5xl mx-auto gap-4 p-6 rounded-2xl border border-gray-300 shadow-lg shadow-slate-600"
             >
                 <div className="lg:w-[40%] w-[90%] min-h-[15rem] border border-gray-400 rounded-md">
-                    <img class="main-img" src="https://enlightio.com/wp-content/uploads/2022/06/why-are-lesson-plans-important-for-teachers.jpg"width="100%" />
+                    {/* <img className="main-img" src="https://enlightio.com/wp-content/uploads/2022/06/why-are-lesson-plans-important-for-teachers.jpg"width="100%" /> */}
+                    <img className="main-img" src="/assets/images/pci1.jpg" width="100%" />
 
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full"
