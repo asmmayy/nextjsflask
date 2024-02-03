@@ -21,7 +21,9 @@ console.log(user)
             className="flex flex-col xl:flex-row items-center justify-between w-full pt-[5rem] lg:gap-2 gap-[2rem] px-[5rem]"
         >
             <p className="text-black lg:text-base text-xs font-bold xl:max-w-[50%] max-w-full">
-                Semplifica la scuola con un clic!<br />Accelerare le attività didattiche e rendere l'apprendimento più accessibile e interessante con l'Intelligenza Artificiale. Crea quiz e lezioni coinvolgenti utilizzando video di YouTube, pagine di Wikipedia, PDF e materiali didattici online con un semplice clic di un pulsante.
+                Semplifica la scuola con un click!<br />
+                Accelerare le attività didattiche e rendere l'apprendimento più accessibile e interessante con l'Intelligenza Artificiale. 
+                Crea quiz e lezioni coinvolgenti utilizzando video di YouTube, pagine di Wikipedia, PDF e materiali didattici online con un semplice click di un pulsante.
             </p>
             <div className="flex flex-col gap-4 lg:w-[15rem] w-full">
                 <p className="text-black lg:text-base text-xs font-bold">
