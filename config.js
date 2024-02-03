@@ -1,2 +1,2 @@
-const link = "http://localhost:5000";
+const link = "https://flaskapinextjs.vercel.app";
 export default link;
