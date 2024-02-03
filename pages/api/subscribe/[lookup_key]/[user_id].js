@@ -9,12 +9,11 @@ export default async function handler(req, res) {
     if (!lookup_key || !user_id) {
         return res.status(400).json({ message: 'Missing headers' })
     }
-
+    console.log("lookup_key");
     try {
         let formData = new FormData();
         formData.append("lookup_key", lookup_key);
         formData.append("user_id", user_id);
-        // const response = await fetch("https://flask-hello-world-new-neon.vercel.app/create-checkout-session", {
         const response = await fetch("https://flaskapinextjs.vercel.app/create-checkout-session", {
             method: 'POST',
             body: formData
