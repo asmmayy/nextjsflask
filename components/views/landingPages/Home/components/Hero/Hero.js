@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import { useDispatch } from 'react-redux';
 import { setUserPublicInfo } from '@/redux/slices/userPublicInfoSlice';
 import { toast } from 'react-toastify';
+import ChatBotIcon from '@/components/common/ChatBotIcon'
+
 
 const Hero = () => {
     const router = useRouter();

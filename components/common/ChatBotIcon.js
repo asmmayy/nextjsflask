@@ -6,19 +6,22 @@ function ChatBotIcon() {
   const [chatVisible, setChatVisible] = useState(true); // Set the initial state to true
 
   const toggleChat = (e) => {
-    console.log("object",);
-    // setChatVisible(!chatVisible);
+    e.preventDefault();
+    setChatVisible(!chatVisible);
   };
 
   return (
     <div>
       <div
         className='fixed right-3 bottom-5 rounded-full py-4 px-4 text-white bg-black'
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer', width: '65px', height: '65px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
         onClick={toggleChat}
       >
-
-        <i className="fa fa-comments-o" aria-hidden="true" style={{ fontSize: "30px" }}></i>
+      {
+        chatVisible ? <i className="fa fa-times" 
+        style={{ fontSize: "15px" }}
+        aria-hidden="true" ></i> : <i className="fa fa-comments-o" aria-hidden="true" style={{ fontSize: "30px" }}></i>
+      }
       </div>
 
       {
@@ -108,6 +111,7 @@ function ChatBotIcon() {
                rounded-md text-sm 
                font-medium text-[#f9fafb]
                 bg-black hover:bg-[#111827E6] h-10 px-4 py-2"
+        onClick={() => console.log("wow")}
 
                 >
                   Send

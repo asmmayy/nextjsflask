@@ -1,5 +1,6 @@
 import React from 'react';
 import { Topbar, Footer } from './components';
+import ChatBotIcon from '@/components/common/ChatBotIcon'
 
 const Main = ({ children }) => {
     return (
@@ -10,6 +11,8 @@ const Main = ({ children }) => {
             <div>
                 {children}
             </div>
+            <ChatBotIcon></ChatBotIcon>
+
             <Footer />
         </>
     )
