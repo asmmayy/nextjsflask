@@ -245,3 +245,11 @@ textarea {
 .CookieConsent {
   background-color: black ! important ;
   }
+
+@media only screen and (max-width: 600px) {
+  .chatbot-container {
+      width: 90% !important;
+
+  }
+  
+}
