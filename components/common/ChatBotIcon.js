@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 function ChatBotIcon() {
-  const [chatVisible, setChatVisible] = useState(true); // Set the initial state to true
+  const [chatVisible, setChatVisible] = useState(false); // Set the initial state to true
 
   const toggleChat = (e) => {
     e.preventDefault();
