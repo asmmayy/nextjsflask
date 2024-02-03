@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import { UserAuth } from '@/shared/context/AuthContext';
 
 const JoinFastSchool = () => {
+    
     const { user } = UserAuth();
     const router = useRouter();
     const [selectedPlan, setSelectedPlan] = useState('');
@@ -51,23 +52,19 @@ const JoinFastSchool = () => {
             formData.append('lookup_key', selectedPlan);
             formData.append('user_id', user_id);
             // const response = await fetch("https://flaskapinextjs.vercel.app/create-checkout-session", {
-                // const response = await 
-                fetch("http://127.0.0.1:5000/create-checkout-session", {
+                const response = await fetch("http://127.0.0.1:5000/create-checkout-session", {
                     method: 'POST',
                     body: formData
-                }).then(res => res.json()).then(data => {
-                    console.log("data", data);
-                    window.location.href = data.url
                 });
-                
+                console.log("response", response);
                 
 
 
             // const data = await response.json();
             // const { session_url } = data;
-            const { url } = data;
-
-            // window.location.href = url;
+            const { url } = response;
+            console.log("response", url);
+            window.location.href = url;
         } catch (error) {
             console.log(error);
             toast.error('Something went wrong, please try again later.');
