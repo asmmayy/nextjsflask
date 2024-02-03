@@ -27,11 +27,11 @@ const Hero = () => {
             data-aos-easing="ease-in-sine" data-aos="zoom-out-up" data-aos-once="false"
         >
             <h1 className="lg:text-4xl text-2xl font-bold text-center text-black">
-                Semplifica la scuola <span className="text-[#2796e5]">con un clic</span>
+                Semplifica la scuola <span className="text-[#2796e5]">con un click</span>
             </h1>
             <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase">
                 Velocizza le attività didattiche e rendi l'apprendimento più accessibile e interessante con l'Intelligenza Artificiale.
-                Crea quiz e lezioni coinvolgenti utilizzando video di YouTube, pagine di Wikipedia, PDF e dispense online con il semplice clic di un pulsante.
+                Crea quiz e lezioni coinvolgenti utilizzando video YouTube, pagine di Wikipedia, PDF e dispense online con un semplice click.
             </p>
             <div className="flex flex-col mt-10 justify-center items-center gap-3 lg:w-[70%] w-full">
                 <p className="text-black lg:text-md text-sm uppercase text-center">
@@ -57,7 +57,7 @@ const Hero = () => {
                         className="bg-black mt-2 text-white lg:text-lg text-sm uppercase rounded-[100px] px-4 py-3 focus:outline-none w-1/2 border border-[#000] transition duration-200 ease-in-out hover:bg-[#2796e5] hover:text-black"
                         onClick={handleContinue}
                     >
-                        Inviare
+                        ISCRIVITI
                     </button>
                 </form>
             </div>
