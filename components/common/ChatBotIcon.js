@@ -54,7 +54,7 @@ function ChatBotIcon() {
                   </path>
                 </svg></div>
               </span>
-                <p className="leading-relaxed"><span className="block font-bold text-gray-700">AI </span>Hi, how can I help you today?
+                <p className="leading-relaxed text-gray-700" ><span className="block font-bold text-gray-700">AI </span >Hi, how can I help you today?
                 </p>
               </div>
 
@@ -68,7 +68,7 @@ function ChatBotIcon() {
                   </path>
                 </svg></div>
               </span>
-                <p className="leading-relaxed"><span className="block font-bold text-gray-700">You </span>fewafef</p>
+                <p className="leading-relaxed text-gray-700"><span className="block font-bold text-gray-700">You </span>fewafef</p>
               </div>
               {/* <!-- Ai Chat Message  --> */}
               <div className="flex gap-3 my-4 text-gray-600 text-sm flex-1"><span
@@ -80,7 +80,7 @@ function ChatBotIcon() {
                   </path>
                 </svg></div>
               </span>
-                <p className="leading-relaxed"><span className="block font-bold text-gray-700">AI </span>Sorry, I couldn't find any
+                <p className="leading-relaxed text-gray-700"><span className="block font-bold text-gray-700">AI </span>Sorry, I couldn't find any
                   information in the documentation about that. Expect answer to be less accurateI could not find the answer to
                   this in the verified sources.</p>
               </div>
