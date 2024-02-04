@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { UserAuth } from '@/shared/context/AuthContext';
 
 const JoinFastSchool = () => {
-    
+
     const { user } = UserAuth();
     const router = useRouter();
     const [selectedPlan, setSelectedPlan] = useState('');
@@ -39,36 +39,18 @@ const JoinFastSchool = () => {
         try {
 
             // send both lookup_key and user_id as query params
-        
-
             let formData = new FormData();
             formData.append('lookup_key', selectedPlan);
             formData.append("user_id", user?.user_id);
-
-            
-                // const response = await fetch("http://127.0.0.1:5000/create-checkout-session", {
-                //     method: 'POST',
-                //     body: formData
-                // });
-
-                fetch("http://127.0.0.1:5000/create-checkout-session", {
-                    method: 'POST',
-                    body: formData
-                }).then((response) => {
-                response.json().then(({checkout_session}) => {
-                console.log("response", checkout_session);
-
+            fetch("http://127.0.0.1:5000/create-checkout-session", {
+                method: 'POST',
+                body: formData
+            }).then((response) => {
+                response.json().then(({ checkout_session }) => {
+                    console.log("response", checkout_session);
                     window.location.href = checkout_session.url
                 })
-                })
-                
-
-
-            // const { checkout_session } = response;
-
-
-            // console.log("response", checkout_session);
-            // window.location.href = url;
+            })
         } catch (error) {
             console.log(error);
             toast.error('Something went wrong, please try again later.');
