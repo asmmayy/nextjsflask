@@ -7,7 +7,7 @@ import cart_icon from "../public/assets/Icons/cart_icon.png";
 import email_icon from "../public/assets/Icons/email_icon.png";
 import fb_icon from "../public/assets/Icons/fb_icon.png";
 import insta_icon from "../public/assets/Icons/insta_icon.png";
-import twitter_icon from "../public/assets/Icons/twitter_icon.png";
+import twitter_icon from "../public/assets/Icons/twitter_icon.jpg";
 import tiktok_icon from "../public/assets/Icons/tiktok_icon.png";
 import easytofastschool from "../public/assets/Images/easytofastschool.jpg"
 import fastschool from "../public/assets/Images/fastschool.jpg"

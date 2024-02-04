@@ -47,10 +47,14 @@ const Footer = () => {
                                 >
                                     <Image 
                                         src={social.icon}
+
                                         alt="social icon"
-                                        width={30}
-                                        height={30}
-                                        className="cursor-pointer opacity-50 hover:opacity-100 transition duration-200 ease-in-out"
+                                        height={social.icon == ICONS.twitter_icon ? 20 : 30} 
+                                        width={social.icon == ICONS.twitter_icon ? 23 : 30} 
+                                        className={`cursor-pointer opacity-50 
+                                        hover:opacity-100 transition duration-200 ease-in-out
+                                        ${social.icon == ICONS.twitter_icon ? 'rounded' : ""}
+                                        `}
                                     />
                                 </Link>
                             )

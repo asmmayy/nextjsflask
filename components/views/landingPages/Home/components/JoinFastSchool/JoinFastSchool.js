@@ -102,7 +102,8 @@ const JoinFastSchool = () => {
             <button
                 className={`
         flex flex-row items-center justify-center 
-        bg-black text-gray-100 p-3 rounded-lg 
+        bg-black text-gray-100 p-3 
+        rounded-lg 
         w-2/4 
         ${!selectedPlan ? "opacity-50 cursor-not-allowed" : ""}
         focus:outline-none 
