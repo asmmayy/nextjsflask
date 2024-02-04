@@ -36,7 +36,7 @@ const Footer = () => {
                     <p className="text-sm text-gray-600">p.iva 02173860764</p>
                     <p className="text-sm text-gray-600">Sede legale Tolve(PZ) Vico 3º Vignali delle Corte 15</p>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 " style={{justifyContent: "center", alignItems: "center"}}>
                     {
                         socials.map((social, idx) => {
                             return (
@@ -50,7 +50,7 @@ const Footer = () => {
 
                                         alt="social icon"
                                         height={social.icon == ICONS.twitter_icon ? 20 : 30} 
-                                        width={social.icon == ICONS.twitter_icon ? 23 : 30} 
+                                        width={social.icon == ICONS.twitter_icon ? 22 : 30} 
                                         className={`cursor-pointer opacity-50 
                                         hover:opacity-100 transition duration-200 ease-in-out
                                         ${social.icon == ICONS.twitter_icon ? 'rounded' : ""}
