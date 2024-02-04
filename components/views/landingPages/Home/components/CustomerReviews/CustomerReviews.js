@@ -36,8 +36,11 @@ const CustomerReviews = () => {
 
             // fetch(`${link}/reviews`, requestOptions)
             fetch(`https://flaskapinextjs.vercel.app/reviews`, requestOptions)
-                .then(response => response.json())
-                .then(result => setDefaultData(result))
+                .then((response) => response.json())
+                .then((result) => {
+                    setDefaultData(result)
+                    console.log("result", result);
+                })
                 .catch(error => console.log('error', error));
         } catch (error) {
             console.log(error);
@@ -105,12 +108,8 @@ const CustomerReviews = () => {
     };
     return (
         <div id='customerReview'>
-
-
-
-
-                <Slider slickPlay {...settings}>
-            {defaultData.map((review, index) => (
+            <Slider slickPlay {...settings}>
+                {defaultData.map((review, index) => (
                     <div className="review_item" key={index}>
                         <div className="flex flex-col md:flex-row">
                             <div className="md:w-2/3 text-left px-4 table">
@@ -131,10 +130,8 @@ const CustomerReviews = () => {
                             <div className="paragraph_text text-left text-707070">{review.customerReview}</div>
                         </div>
                     </div>
-
-
-))}
-                </Slider>
+                ))}
+            </Slider>
 
 
 

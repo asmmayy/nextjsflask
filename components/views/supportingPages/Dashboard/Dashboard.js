@@ -23,7 +23,7 @@ const Dashboard = () => {
         
         try {
             setIsLoading(true);
-            const response = await fetch('https://aef7-61-5-135-226.ngrok-free.app/lesson-planner', {
+            const response = await fetch('https://flaskapinextjs.vercel.app/lesson-planner', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

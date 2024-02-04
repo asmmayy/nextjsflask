@@ -24,7 +24,7 @@ const Contact = () => {
 
         try {
             setIsLoading(true);
-            const response = await fetch(`${link}/contact-us`, {
+            const response = await fetch(`http://127.0.0.1:5000/contact-us`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

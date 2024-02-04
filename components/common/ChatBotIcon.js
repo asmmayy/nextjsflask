@@ -93,7 +93,11 @@ function ChatBotIcon() {
             className="chatbot-container fixed 
             bottom-[calc(4rem+1.5rem)] right-0 
             overflow-auto
-            mr-4 bg-white p-6 rounded-lg border border-[#e5e7eb] w-[440px] h-[634px]">
+            mr-4 bg-white p-6 rounded-lg border border-[#e5e7eb] w-[440px] h-[634px]"
+            style={{ zIndex: '9999' }}
+            
+            
+            >
 
 
             {/* <!-- Heading --> */}
