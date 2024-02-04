@@ -46,7 +46,7 @@ const Contact = () => {
     return (
 
         <div
-          className="mt-12 max-w-screen-xl px-4 
+            className="mt-12 max-w-screen-xl px-4 
           grid gap-3 grid-cols-1 md:grid-cols-2
            md:px-6 lg:px-8 xl:px-16 py-8 mx-auto
             bg-gray-100
@@ -55,38 +55,64 @@ const Contact = () => {
         >
             <div className="flex flex-col justify-between">
                 <div>
-                    <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Per favore traducilo in italiano! </h2>
+                    <h2 className="text-4xl lg:text-5xl font-bold leading-tight">AIUTACI A MIGLIORARE! </h2>
                     <div className="text-gray-700 mt-8">
-                        Não gosta de formulários?<span className="underline">Envie-nos um Email </span>
+                        Não gosta de formulários?
+                        <a href="mailto:fastschoolitalia@gmail.com" className="underline">
+                            Envie-nos um Email
+                        </a>
                     </div>
                 </div>
                 <div className="mt-8 text-center">
                     <Image alt="" src={IMAGES.contact}></Image>
                 </div>
             </div>
-            <div className="">
+            <form onSubmit={(e) => handleSubmit(e)} >
                 <div>
                     <span className="uppercase text-sm text-gray-600 font-bold">Nome</span>
-                    <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                        type="text" placeholder="" />
+                    <input
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Nome" />
                 </div>
                 <div className="mt-8">
                     <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-                    <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                        type="text" />
+                    <input className="w-full bg-gray-300 text-gray-900 
+                    mt-2 p-3
+                     rounded-lg 
+
+                     focus:outline-none focus:shadow-outline"
+                        type="email"
+                        placeholder="Email"
+                        required
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                    />
                 </div>
                 <div className="mt-8">
                     <span className="uppercase text-sm text-gray-600 font-bold">Messaggio</span>
                     <textarea
+                        onChange={(e) => setMessage(e.target.value)}
+                        value={message}
+                        placeholder="Messaggio"
                         className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                 </div>
                 <div className="mt-8">
                     <button
-                        className="uppercase text-sm font-bold tracking-wide bg-black text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                        className={`
+                        uppercase text-sm font-bold tracking-wide
+                         bg-black text-gray-100 p-3 rounded-lg 
+                         ${!name.trim() || !email.trim() || !message.trim() ? "opacity-50 cursor-not-allowed" : ""}
+                         w-full focus:outline-none 
+                         focus:shadow-outline
+
+                        `}
+                        disabled={!name.trim() || !email.trim() || !message.trim()}>
                         Invia Messaggio
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
 
     )

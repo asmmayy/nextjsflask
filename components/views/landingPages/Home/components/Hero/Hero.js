@@ -24,8 +24,8 @@ const Hero = () => {
     }
 
     return (
-        <section 
-            className="flex flex-col items-center justify-center max-w-3xl mx-auto pt-10 gap-2"      data-aos-delay="50" data-aos-duration="1000"
+        <section
+            className="flex flex-col items-center justify-center max-w-3xl mx-auto pt-10 gap-2" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-sine" data-aos="zoom-out-up" data-aos-once="false"
         >
             <h1 className="lg:text-4xl text-2xl font-bold text-center text-black">
@@ -40,24 +40,51 @@ const Hero = () => {
                     REGISTRATI PER LA PROVA GRATUITA
                 </p>
                 <form className="flex flex-col items-center justify-center gap-4 mt-2 w-full">
-                    <input 
+
+                    <input
                         type="name"
                         placeholder="Nome"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="text-black lg:text-lg text-sm bg-transparent uppercase rounded-[100px] px-4 py-3 border border-[#000] focus:outline-none w-full"
+                        className="flex h-10 w-full rounded-md 
+                      border 
+                    border-[#000]
+                      
+                      px-3 
+                      py-2 text-sm 
+                      focus:outline-none focus:ring-2
+                      text-[#030712] focus-visible:ring-offset-2"
                     />
-                    <input 
+
+                    <input
                         type="email"
                         placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="text-black lg:text-lg text-sm bg-transparent uppercase rounded-[100px] px-4 py-3 border border-[#000] focus:outline-none w-full"
+                        className="flex h-10 w-full rounded-md 
+                    border-[#000]
+                      border  px-3 
+                      py-2 text-sm 
+                      focus:outline-none focus:ring-2
+                      text-[#030712] focus-visible:ring-offset-2"
                     />
-                    <button 
+                    {/* rounded-[100px]  */}
+                    <button
                         type="submit"
-                        className="bg-black mt-2 text-white lg:text-lg text-sm uppercase rounded-[100px] px-4 py-3 focus:outline-none w-1/2 border border-[#000] transition duration-200 ease-in-out hover:bg-[#2796e5] hover:text-black"
+                        className={`bg-black mt-2
+                        rounded-lg 
+                        w-2/4 
+
+                         text-white lg:text-lg
+                          text-sm  
+                          px-2 py-2
+                           focus:outline-none  border
+                            border-[#000] transition duration-200 ease-in-out
+                            ${!name || !email ? "opacity-50 cursor-not-allowed" : ""}
+                            `}
                         onClick={handleContinue}
+
+                        disabled={!name || !email}
                     >
                         ISCRIVITI
                     </button>

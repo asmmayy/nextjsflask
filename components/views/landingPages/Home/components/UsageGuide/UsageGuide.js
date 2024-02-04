@@ -39,7 +39,7 @@ const UsageGuide = () => {
                 </div>
             </section>
             <section
-                className="flex lg:flex-row flex-col 
+                className="flex flex-col 
                 items-center 
                 justify-between
                 max-w-5xl
@@ -48,6 +48,7 @@ const UsageGuide = () => {
                 text-gray-900
                 rounded-lg 
                 shadow-lg
+                lg:flex-row-reverse
                   "
             >
                 <div className="lg:w-[40%] w-[90%] min-h-[15rem] border border-gray-400 rounded-md">

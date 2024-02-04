@@ -197,7 +197,8 @@ function ChatBotIcon() {
                       text-[#030712] focus-visible:ring-offset-2"
                 />
                 <button
-                  className={`inline-flex items-center justify-center rounded-md text-sm font-medium ${!userMessage.trim() || isLoading
+                  className={`inline-flex items-center justify-center rounded-md text-sm font-medium 
+                  ${!userMessage.trim() || isLoading
                     ? 'text-[#fff] opacity-50 bg-black cursor-not-allowed'
                     : 'text-[#f9fafb] bg-black hover:bg-[#111827E6]'
                     } h-10 px-4 py-2`}

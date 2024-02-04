@@ -66,7 +66,7 @@ const JoinFastSchool = () => {
              border-gray-500 
             bg-gray-100
             rounded-lg shadow-lg
-            " 
+            "
         >
             {/* data-aos-easing="ease-in-sine" data-aos="flip-up" data-aos-once="false" */}
             {/* data-aos-delay="50" data-aos-duration="1000" */}
@@ -99,10 +99,18 @@ const JoinFastSchool = () => {
                     ))
                 }
             </div>
-
             <button
-                className={`flex flex-row items-center justify-center ${selectedPlan ? 'bg-black' : 'bg-gray-500'} ${selectedPlan ? 'cursor-pointer' : 'cursor-auto'} mt-5 text-white lg:text-lg text-sm uppercase rounded-full px-4 py-3 focus:outline-none w-1/2 border border-gray-300 transition duration-200 ease-in-out ${selectedPlan && 'hover:bg-blue-600'} shadow-sm`}
+                className={`
+        flex flex-row items-center justify-center 
+        bg-black text-gray-100 p-3 rounded-lg 
+        w-2/4 
+        ${!selectedPlan ? "opacity-50 cursor-not-allowed" : ""}
+        focus:outline-none 
+        focus:shadow-outline
+    `}
+        
                 onClick={handleContinue}
+                disabled={!selectedPlan}
             >
                 Abbonati
                 <Image
@@ -113,6 +121,34 @@ const JoinFastSchool = () => {
                     className="h-auto ml-2"
                 />
             </button>
+
+
+
+            {/* <button
+                // ${selectedPlan ? 'bg-black' : 'bg-gray-500'} ${selectedPlan ?
+                //  'cursor-pointer' : 'cursor-auto'} 
+                className={`flex flex-row items-center justify-center 
+                ${!selectedPlan ? "opacity-50 cursor-not-allowed" : ""}
+                'bg-black'
+                 mt-5 text-white lg:text-lg 
+                 text-sm uppercase rounded-full px-4 py-3 
+                 focus:outline-none w-1/2 border
+                  border-gray-300 transition duration-200 ease-in-out 
+                  shadow-sm`}
+                onClick={handleContinue}
+                disabled={!selectedPlan}
+
+            >
+                //   ${selectedPlan && 'hover:bg-blue-600'} 
+                Abbonati
+                <Image
+                    src={ICONS.cart_icon}
+                    alt="cart icon"
+                    width={25}
+                    height={25}
+                    className="h-auto ml-2"
+                />
+            </button> */}
         </section>
     )
 }
