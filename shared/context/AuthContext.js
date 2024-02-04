@@ -15,8 +15,6 @@ export const AuthContextProvider = ({ children }) => {
     const login = async (email, password, teacher_type) => {
         setLoading(true);
         try {
-            // const response = await fetch('/api/users/login', {
-            // const response = await fetch(`${link}/login`, {
             const response = await fetch(`https://flask-hello-world-omega-ivory.vercel.app/login`, {
                 method: 'POST',
                 headers: {
@@ -26,7 +24,6 @@ export const AuthContextProvider = ({ children }) => {
             });
 
             const data = await response.json();
-            console.log(data,"+++++++++++++++++")
             if (response.status === 200 || response.status === 201) {
                 const { user_id, email, subscription_active, subscription_type, demo_active } = data;
                 setCookie(null, 'uid', user_id, {
@@ -48,7 +45,7 @@ export const AuthContextProvider = ({ children }) => {
     const logout = () => {
         destroyCookie(null, 'uid');
         setUser(null);
-        window.location.reload();
+        // window.location.reload();
     }
 
     useEffect(() => {

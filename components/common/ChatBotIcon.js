@@ -127,7 +127,8 @@ function ChatBotIcon() {
               </span>
                 <p className={`leading-relaxed text-gray-700`}>
                   <span className="block font-bold text-gray-700">AI</span>
-                  Hello! How can I assist you today?
+                  Ciao, come posso aiutarti oggi?
+
                 </p>
               </div>
 
@@ -144,7 +145,7 @@ function ChatBotIcon() {
                     </div>
                   </span>
                   <p className={`leading-relaxed text-gray-700 ${message.role == 'ai' ? '' : ''}`}>
-                    <span className="block font-bold text-gray-700">{message.role == 'ai' ? 'AI' : 'You'}</span>
+                    <span className="block font-bold text-gray-700">{message.role == 'ai' ? 'AI' : 'Voi'}</span>
                     {message.content}
 
                   </p>
@@ -197,8 +198,8 @@ function ChatBotIcon() {
                 />
                 <button
                   className={`inline-flex items-center justify-center rounded-md text-sm font-medium ${!userMessage.trim() || isLoading
-                      ? 'text-[#fff] opacity-50 bg-black cursor-not-allowed'
-                      : 'text-[#f9fafb] bg-black hover:bg-[#111827E6]'
+                    ? 'text-[#fff] opacity-50 bg-black cursor-not-allowed'
+                    : 'text-[#f9fafb] bg-black hover:bg-[#111827E6]'
                     } h-10 px-4 py-2`}
                   disabled={!userMessage.trim() || isLoading}
                 >
