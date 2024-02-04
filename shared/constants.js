@@ -11,6 +11,8 @@ import twitter_icon from "../public/assets/Icons/twitter_icon.png";
 import tiktok_icon from "../public/assets/Icons/tiktok_icon.png";
 import easytofastschool from "../public/assets/Images/easytofastschool.jpg"
 import fastschool from "../public/assets/Images/fastschool.jpg"
+import fastschoolPic from "../public/assets/Images/fastschoolpic.jpeg"
+import fastschoolPic2 from "../public/assets/Images/fastschoolpic2.jpeg"
 
 export const LOGOS = {
     fastSchool_logo,
@@ -20,7 +22,9 @@ export const LOGOS = {
 export const IMAGES = {
     defaultUser_img,
     easytofastschool,
-    fastschool
+    fastschool,
+    fastschoolPic,
+    fastschoolPic2,
 }
 
 export const ICONS = {

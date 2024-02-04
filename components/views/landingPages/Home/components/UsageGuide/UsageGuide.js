@@ -11,7 +11,7 @@ const UsageGuide = () => {
                 className="flex lg:flex-row flex-col items-center justify-between max-w-5xl mx-auto gap-4 p-6 rounded-2xl border border-gray-300 shadow-lg shadow-slate-600"
             >
                 <div className="lg:w-[40%] w-[90%] max-w-[20rem] min-h-[15rem] border border-gray-400 rounded-md">
-                    <Image alt="" src={IMAGES.easytofastschool} width="100%" />
+                    <Image alt="" src={IMAGES.fastschoolPic} width="100%" />
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full" data-aos-delay="50" data-aos-duration="1000"
                     data-aos-easing="ease-in-sine" data-aos="flip-down" data-aos-once="false">
@@ -28,7 +28,7 @@ const UsageGuide = () => {
             >
                 <div className="lg:w-[40%] w-[90%] min-h-[15rem] border border-gray-400 rounded-md">
                     {/* <img className="main-img" src="https://enlightio.com/wp-content/uploads/2022/06/why-are-lesson-plans-important-for-teachers.jpg"width="100%" /> */}
-                    <Image alt=""  className="main-img" src={IMAGES.fastschool} width="100%" />
+                    <Image alt=""  className="main-img" src={IMAGES.fastschoolPic2} width="100%" />
 
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full"
