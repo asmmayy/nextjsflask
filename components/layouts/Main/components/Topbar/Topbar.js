@@ -9,7 +9,7 @@ const Topbar = () => {
     const { user, logout, loading } = UserAuth();
     const router = useRouter();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    
+
     useEffect(() => {
         if (user) {
             setIsLoggedIn(true);
@@ -32,21 +32,21 @@ const Topbar = () => {
             <div className={`${loading ? 'hidden' : 'flex'} flex-row items-center w-max lg:gap-10 gap-5`}>
                 {isLoggedIn && user?.demo_active && (user?.subscription_type === "FREE_DEMO") && router.pathname !== '/subscription/plans' && (
                     <>
-                    <Link
-                        href={'/subscription/plans'}
-                    >
-                        <p className={`text-black uppercase hover:text-blue-500 lg:text-base text-xs font-bold`}>
-                            Aggiorna il tuo piano
-                        </p>
-                    </Link>
-                    <Link
-                    href={'/write_review'}
-                >
-                    <p className={`text-black uppercase hover:text-blue-500 lg:text-base text-xs font-bold`}>
-                        Review
-                    </p>
-                </Link>
-                </>
+                        <Link
+                            href={'/subscription/plans'}
+                        >
+                            <p className={`text-black uppercase hover:text-blue-500 lg:text-base text-xs font-bold`}>
+                                Aggiorna il tuo piano
+                            </p>
+                        </Link>
+                        <Link
+                            href={'/write_review'}
+                        >
+                            <p className={`text-black uppercase hover:text-blue-500 lg:text-base text-xs font-bold`}>
+                                Review
+                            </p>
+                        </Link>
+                    </>
                 )}
                 {/* <Link
                     href={router.pathname === '/' ? '#contact-form': router.pathname}
@@ -68,18 +68,18 @@ const Topbar = () => {
                     !isLoggedIn && !isSignUpOrSignIn && (
                         <Link href={'/login'} >
                             <p className={`text-black uppercase hover:text-blue-500 lg:text-base text-xs font-bold`}>
-                                Login
+                                Accedi
                             </p>
                         </Link>
                     )
                 }
                 {/* {isLoggedIn && ( */}
-                    <p 
-                        className={`text-red-500 uppercase lg:text-base text-xs font-bold cursor-pointer hover:scale-105 transition duration-200 ease-in-out`}
-                        onClick={logout}
-                    >
-                        Logout
-                    </p>
+                <p
+                    className={`text-red-500 uppercase lg:text-base text-xs font-bold cursor-pointer hover:scale-105 transition duration-200 ease-in-out`}
+                    onClick={logout}
+                >
+                    Esci
+                </p>
                 {/* )} */}
             </div>
         </header>

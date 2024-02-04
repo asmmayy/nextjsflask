@@ -58,7 +58,8 @@ const Footer = () => {
                     }
                 </div>
             </div>
-            <div className="mt-4 flex justify-center">
+            {/* justify-center */}
+            <div className="mt-4 flex ">
                 <Link href="/assets/Docs/Termini-e-Condizioni-Sito-Web-o-App.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mr-4">Terms and Conditions</Link>
                 <Link href="/assets/Docs/Privacy-Policy-sul-Trattamento-dei-Dati.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Privacy</Link>
             </div>
