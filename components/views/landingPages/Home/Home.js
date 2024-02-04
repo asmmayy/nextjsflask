@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="h-full pb-10 flex flex-col gap-[10rem]">
+            <div className="h-full pb-10 flex flex-col gap-[7rem]">
                 <ContainerCustom className="relative">
                     <Hero />
                 </ContainerCustom>

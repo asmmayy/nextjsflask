@@ -59,9 +59,18 @@ const JoinFastSchool = () => {
 
     return (
         <section
-            className="flex flex-col items-center justify-center max-w-5xl mx-auto pt-10 gap-4 py-[4rem] rounded-2xl border border-gray-500 shadow-md shadow-slate-400" data-aos-delay="50" data-aos-duration="1000"
-            data-aos-easing="ease-in-sine" data-aos="flip-up" data-aos-once="false"
+            className="flex flex-col 
+            items-center 
+            justify-center max-w-5xl mx-auto 
+            pt-10 gap-4 py-[4rem]
+             border-gray-500 
+            bg-gray-100
+            rounded-lg shadow-lg
+            " 
         >
+            {/* data-aos-easing="ease-in-sine" data-aos="flip-up" data-aos-once="false" */}
+            {/* data-aos-delay="50" data-aos-duration="1000" */}
+
             <Image
                 src={LOGOS.fastSchool_logo_black}
                 alt="fast school logo"

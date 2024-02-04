@@ -44,42 +44,47 @@ const Contact = () => {
     }
 
     return (
-        <div>
-            <div
-                className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
-                <div className="flex flex-col justify-between">
-                    <div>
-                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Per favore traducilo in italiano! </h2>
-                        <div className="text-gray-700 mt-8">
-                            Não gosta de formulários?<span className="underline">Envie-nos um Email </span>
-                        </div>
-                    </div>
-                    <div className="mt-8 text-center">
-                        <Image alt="" src={IMAGES.contact}></Image>
+
+        <div
+          className="mt-12 max-w-screen-xl px-4 
+          grid gap-3 grid-cols-1 md:grid-cols-2
+           md:px-6 lg:px-8 xl:px-16 py-8 mx-auto
+            bg-gray-100
+            text-gray-900 rounded-lg shadow-lg"
+
+        >
+            <div className="flex flex-col justify-between">
+                <div>
+                    <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Per favore traducilo in italiano! </h2>
+                    <div className="text-gray-700 mt-8">
+                        Não gosta de formulários?<span className="underline">Envie-nos um Email </span>
                     </div>
                 </div>
-                <div className="">
-                    <div>
-                        <span className="uppercase text-sm text-gray-600 font-bold">Nome</span>
-                        <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="" />
-                    </div>
-                    <div className="mt-8">
-                        <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-                        <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" />
-                    </div>
-                    <div className="mt-8">
-                        <span className="uppercase text-sm text-gray-600 font-bold">Messaggio</span>
-                        <textarea
-                            className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-                    </div>
-                    <div className="mt-8">
-                        <button
-                            className="uppercase text-sm font-bold tracking-wide bg-black text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-                           Invia Messaggio
-                        </button>
-                    </div>
+                <div className="mt-8 text-center">
+                    <Image alt="" src={IMAGES.contact}></Image>
+                </div>
+            </div>
+            <div className="">
+                <div>
+                    <span className="uppercase text-sm text-gray-600 font-bold">Nome</span>
+                    <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="" />
+                </div>
+                <div className="mt-8">
+                    <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
+                    <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" />
+                </div>
+                <div className="mt-8">
+                    <span className="uppercase text-sm text-gray-600 font-bold">Messaggio</span>
+                    <textarea
+                        className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                </div>
+                <div className="mt-8">
+                    <button
+                        className="uppercase text-sm font-bold tracking-wide bg-black text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                        Invia Messaggio
+                    </button>
                 </div>
             </div>
         </div>
