@@ -1,6 +1,8 @@
 import link from "@/config"
 import { useState } from "react"
 import { toast } from "react-toastify"
+import Image from "next/image"
+import { IMAGES } from "@/shared/constants"
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -42,41 +44,46 @@ const Contact = () => {
     }
 
     return (
-        <section
-            className="flex flex-col items-center justify-center max-w-lg mx-auto pt-10 gap-[4rem] bg-[#ffffff12] lg:h-[490px]"
-            id="formSec"
-        >
-            <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col items-center justify-center gap-4 mt-2 w-full">
-                <input
-                    onChange={(e) => setName(e.target.value)}
-                    value={name}
-                    type="text"
-                    placeholder="Nome"
-                    className="text-black lg:text-lg text-sm bg-transparent uppercase rounded-[100px] px-4 py-3 border border-[#000] focus:outline-none w-full"
-                />
-                <input
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                    type="email"
-                    placeholder="Email"
-                    className="text-black lg:text-lg text-sm bg-transparent uppercase rounded-[100px] px-4 py-3 border border-[#000] focus:outline-none w-full"
-                />
-                <textarea
-                    onChange={(e) => setMessage(e.target.value)}
-                    value={message}
-                    placeholder="Messaggio"
-                    className=""
-                    rows={10}
-                />
-                <button
-                    type="submit"
-                    className="bg-black mt-2 text-white lg:text-lg text-sm uppercase rounded-[100px] px-4 py-3 focus:outline-none w-1/2 border
-                     border-[#000] transition duration-200 ease-in-out hover:bg-[#2796e5]"
-                >
-                    Invia
-                </button>
-            </form>
-        </section>
+        <div>
+            <div
+                className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+                <div className="flex flex-col justify-between">
+                    <div>
+                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Per favore traducilo in italiano! </h2>
+                        <div className="text-gray-700 mt-8">
+                            Não gosta de formulários?<span className="underline">Envie-nos um Email </span>
+                        </div>
+                    </div>
+                    <div className="mt-8 text-center">
+                        <Image alt="" src={IMAGES.contact}></Image>
+                    </div>
+                </div>
+                <div className="">
+                    <div>
+                        <span className="uppercase text-sm text-gray-600 font-bold">Nome</span>
+                        <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="" />
+                    </div>
+                    <div className="mt-8">
+                        <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
+                        <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="text" />
+                    </div>
+                    <div className="mt-8">
+                        <span className="uppercase text-sm text-gray-600 font-bold">Messaggio</span>
+                        <textarea
+                            className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div className="mt-8">
+                        <button
+                            className="uppercase text-sm font-bold tracking-wide bg-black text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                           Invia Messaggio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     )
 }
 

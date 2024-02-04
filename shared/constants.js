@@ -13,7 +13,7 @@ import easytofastschool from "../public/assets/Images/easytofastschool.jpg"
 import fastschool from "../public/assets/Images/fastschool.jpg"
 import fastschoolPic from "../public/assets/Images/fastschoolpic.jpeg"
 import fastschoolPic2 from "../public/assets/Images/fastschoolpic2.jpeg"
-
+import contact from "../public/assets/Images/contact.png"
 export const LOGOS = {
     fastSchool_logo,
     fastSchool_logo_black
@@ -25,6 +25,7 @@ export const IMAGES = {
     fastschool,
     fastschoolPic,
     fastschoolPic2,
+    contact,
 }
 
 export const ICONS = {

@@ -76,7 +76,7 @@ function ChatBotIcon() {
     <div>
       <div
         className='fixed right-3 bottom-5 rounded-full py-4 px-4 text-white bg-black'
-        style={{ cursor: 'pointer', width: '65px', height: '65px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        style={{ cursor: 'pointer', width: '65px', height: '65px', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: '9999' }}
         onClick={toggleChat}
       >
         {
