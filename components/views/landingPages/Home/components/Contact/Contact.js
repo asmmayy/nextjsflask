@@ -34,6 +34,8 @@ const Contact = () => {
             setName("")
             setEmail("")
             setMessage("")
+            toast.success("Messaggio inviato");
+
         } catch (error) {
             console.log(error);
             toast.error('Qualcosa è andato storto, riprova più tardi.')
@@ -108,7 +110,8 @@ const Contact = () => {
                          focus:shadow-outline
 
                         `}
-                        disabled={!name.trim() || !email.trim() || !message.trim()}>
+                        disabled={!name.trim() || !email.trim() || !message.trim()}
+                        >
                         Invia Messaggio
                     </button>
                 </div>
