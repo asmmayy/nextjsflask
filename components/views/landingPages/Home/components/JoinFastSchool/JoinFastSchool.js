@@ -81,7 +81,7 @@ const JoinFastSchool = () => {
             }).then((response) => {
                 response.json().then(({ checkout_session }) => {
                     console.log("response", checkout_session);
-                    // window.location.href = checkout_session.url
+                    window.location.href = checkout_session.url
                 })
             })
         } catch (error) {
@@ -154,34 +154,6 @@ const JoinFastSchool = () => {
                     className="h-auto ml-2"
                 />
             </button>
-
-
-
-            {/* <button
-                // ${selectedPlan ? 'bg-black' : 'bg-gray-500'} ${selectedPlan ?
-                //  'cursor-pointer' : 'cursor-auto'} 
-                className={`flex flex-row items-center justify-center 
-                ${!selectedPlan ? "opacity-50 cursor-not-allowed" : ""}
-                'bg-black'
-                 mt-5 text-white lg:text-lg 
-                 text-sm uppercase rounded-full px-4 py-3 
-                 focus:outline-none w-1/2 border
-                  border-gray-300 transition duration-200 ease-in-out 
-                  shadow-sm`}
-                onClick={handleContinue}
-                disabled={!selectedPlan}
-
-            >
-                //   ${selectedPlan && 'hover:bg-blue-600'} 
-                Abbonati
-                <Image
-                    src={ICONS.cart_icon}
-                    alt="cart icon"
-                    width={25}
-                    height={25}
-                    className="h-auto ml-2"
-                />
-            </button> */}
         </section>
     )
 }
