@@ -58,12 +58,12 @@ const Contact = () => {
             <div className="flex flex-col justify-between">
                 <div>
                     <h2 className="text-4xl lg:text-5xl font-bold leading-tight">AIUTACI A MIGLIORARE! </h2>
-                    <div className="text-gray-700 mt-8">
+                    {/* <div className="text-gray-700 mt-8">
                         Não gosta de formulários?
                         <a href="mailto:fastschoolitalia@gmail.com" className="underline">
                             Envie-nos um Email
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="mt-8 text-center">
                     <Image alt="" src={IMAGES.contact}></Image>
