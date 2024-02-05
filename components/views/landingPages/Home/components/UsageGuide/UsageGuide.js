@@ -77,7 +77,8 @@ const UsageGuide = () => {
                         Riduce il carico di lavoro e fa risparmiare tempo prezioso.
                         In pochi secondi avrai a tua disposizione un elaborato
                         per studiare o spiegare l'argomento scelto,
-                        numerosi quiz per allenarti, un outline con i punti sali
+                        numerosi quiz per allenarti, un outline con i punti salienti
+                        ed uno schema riassuntivo
                     </p>
                 </div>
             </section>
