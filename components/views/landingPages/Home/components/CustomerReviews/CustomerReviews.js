@@ -6,26 +6,11 @@ import { toast } from "react-toastify";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { ICONS } from "@/shared/constants";
 
 const CustomerReviews = () => {
     const [defaultData, setDefaultData] = useState([])
-    const dtReview = [
-        {
-            customerName: "Paolo R",
-            customerReview: "Applicazione fantastica! Semplifica la pianificazione delle lezioni fornendo contenuti di qualità e mi aiuta ad avere sempre nuove idee molto apprezzate dai miei studenti. Ottimo rapporto qualità prezzo",
-            customerImg: IMAGES.defaultUser_img
-        },
-        {
-            customerName: "Alessandra L",
-            customerReview: "Finalmente lo strumento giusto per ottimizzare il lavoro da svolgere a casa dopo un'estenuante giornata in classe. Grazie a questa app riesco ad avere più tempo libero da dedicare a me e ai miei figli. Davvero molto buono!",
-            customerImg: IMAGES.defaultUser_img
-        },
-        {
-            customerName: "Paola V",
-            customerReview: "Inizialmente pensavo fosse la solita app che bloccava la magia dopo pochi utilizzi e invece...Wow! Al costo di 10€ posso usarlo all'infinito. Uno strumento fantastico che sta migliorando la qualità delle mie lezioni e facendomi risparmiare tempo prezioso.",
-            customerImg: IMAGES.defaultUser_img
-        },
-    ];
+
     // const [reviews, setReviews] = useState([])
     const getReviews = async () => {
         try {
@@ -35,11 +20,11 @@ const CustomerReviews = () => {
             };
 
             // fetch(`${link}/reviews`, requestOptions)
-            fetch(`https://flaskapinextjs.vercel.app/reviews`, requestOptions)
+            fetch(`http://127.0.0.1:5000/reviews`, requestOptions)
                 .then((response) => response.json())
                 .then((result) => {
                     setDefaultData(result)
-                    console.log("result", result);
+                    console.log("result", JSON.stringify(result));
                 })
                 .catch(error => console.log('error', error));
         } catch (error) {
@@ -109,28 +94,39 @@ const CustomerReviews = () => {
     return (
         <div id='customerReview'>
             <Slider slickPlay {...settings}>
-                {defaultData.map((review, index) => (
-                    <div className="review_item" key={index}>
-                        <div className="flex flex-col md:flex-row">
-                            <div className="md:w-2/3 text-left px-4 table">
-                                <div className="profile_img_div display_table_cell align-middle">
-                                    <img src={review.customerImg} />
+                {defaultData.map((review, index) => {
+                    const nameWithoutEmail = review.user_name.split('@')[0];
+                    const nameWithoutNumbers = nameWithoutEmail.replace(/\d+/g, ''); // Remove numeric characters
+
+                    return (
+
+                        <div className="review_item" key={index} style={{ height: "157px" }}>
+                            <div className="flex flex-col md:flex-row">
+                                <div className="md:w-2/3 text-left px-4 table">
+                                    <div className="profile_img_div display_table_cell align-middle">
+                                        <Image alt="" width="100%" height="100%" src={review.gender.toLowerCase() == "male" ? ICONS.male_icon : ICONS.female_icon} />
+
+                                    </div>
+                                    <div className="profile_text_div border-0 display_table_cell align-middle">
+                                        <div className="text-454545 reviews_username">{nameWithoutNumbers}</div>
+                                    </div>
                                 </div>
-                                <div className="profile_text_div border-0 display_table_cell align-middle">
-                                    <div className="text-454545 reviews_username">{review.customerName}</div>
+                                <div className="md:w-1/3 text-center pt-4 px-4">
+                                    <div className="reviews_verified">
+                                        <span className="verify_text">VERIFIED</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="md:w-1/3 text-center pt-4 px-4">
-                                <div className="reviews_verified">
-                                    <span className="verify_text">VERIFIED</span>
-                                </div>
+                            <div className="!pt-2">
+                                <div className="paragraph_text text-left text-707070">{review.message}</div>
                             </div>
                         </div>
-                        <div className="!pt-2">
-                            <div className="paragraph_text text-left text-707070">{review.customerReview}</div>
-                        </div>
-                    </div>
-                ))}
+
+                    )
+
+                })}
+
+
             </Slider>
 
 

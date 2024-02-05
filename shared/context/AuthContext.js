@@ -45,7 +45,7 @@ export const AuthContextProvider = ({ children }) => {
     const logout = () => {
         destroyCookie(null, 'uid');
         setUser(null);
-        // window.location.reload();
+        window.location.reload();
     }
 
     useEffect(() => {

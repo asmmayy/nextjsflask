@@ -67,9 +67,9 @@ const JoinFastSchool = () => {
             bg-gray-100
             rounded-lg shadow-lg
             "
+            data-aos-easing="ease-in-sine" data-aos="flip-up" data-aos-once="false"
+            data-aos-delay="50" data-aos-duration="1000"
         >
-            {/* data-aos-easing="ease-in-sine" data-aos="flip-up" data-aos-once="false" */}
-            {/* data-aos-delay="50" data-aos-duration="1000" */}
 
             <Image
                 src={LOGOS.fastSchool_logo_black}

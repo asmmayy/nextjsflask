@@ -26,13 +26,13 @@ const UsageGuide = () => {
                     <Image alt="" src={IMAGES.fastschoolPic} width="100%" />
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full"
+                    data-aos-delay="50" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
+                    data-aos="flip-down" data-aos-once="false"
                 >
                     <h1 className="lg:text-4xl text-2xl font-bold text-center text-black capitalize">
                         Come utilizzare FastSchool
                     </h1>
-                    {/* data-aos-easing="ease-in-sine" */}
-                    {/* data-aos-delay="50" data-aos-duration="1000" */}
-                    {/* data-aos="flip-down" data-aos-once="false" */}
                     <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase ">
                         Facile e veloce. Per utilizzare FastSchool AI tutto quello che devi fare è incollare l'URL del contenuto scelto nell'apposito spazio, attendere qualche secondo e il gioco è fatto. Puoi ripetere l'operazione più e più volte e una volta che sei soddisfatto del risultato, salva e scarica le tue lezioni.
                     </p>
@@ -57,9 +57,9 @@ const UsageGuide = () => {
 
                 </div>
                 <div className="flex flex-col p-4 lg:w-[70%] w-full"
+                    data-aos-easing="ease-in-sine" data-aos="fade-right" data-aos-once="false"
+                    data-aos-delay="50" data-aos-duration="1000"
                 >
-                    {/* data-aos-delay="50" data-aos-duration="1000" */}
-                    {/* data-aos-easing="ease-in-sine" data-aos="fade-right" data-aos-once="false" */}
                     <h1 className="lg:text-4xl text-2xl font-bold text-center text-black capitalize">
                         Cosa fa FastSchool
                     </h1>

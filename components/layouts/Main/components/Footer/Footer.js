@@ -50,7 +50,7 @@ const Footer = () => {
 
                                         alt="social icon"
                                         height={social.icon == ICONS.twitter_icon ? 20 : 30} 
-                                        width={social.icon == ICONS.twitter_icon ? 22 : 30} 
+                                        width={social.icon == ICONS.twitter_icon ? 21 : 30} 
                                         className={`cursor-pointer opacity-50 
                                         hover:opacity-100 transition duration-200 ease-in-out
                                         ${social.icon == ICONS.twitter_icon ? 'rounded' : ""}

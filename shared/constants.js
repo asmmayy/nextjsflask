@@ -14,6 +14,9 @@ import fastschool from "../public/assets/Images/fastschool.jpg"
 import fastschoolPic from "../public/assets/Images/fastschoolpic.jpeg"
 import fastschoolPic2 from "../public/assets/Images/fastschoolpic2.jpeg"
 import contact from "../public/assets/Images/contact.png"
+import male_icon from "../public/assets/Icons/male.png"
+import female_icon from "../public/assets/Icons/female.png"
+
 export const LOGOS = {
     fastSchool_logo,
     fastSchool_logo_black
@@ -34,5 +37,7 @@ export const ICONS = {
     fb_icon,
     insta_icon,
     twitter_icon,
-    tiktok_icon
+    tiktok_icon,
+    male_icon,
+    female_icon
 }
