@@ -32,8 +32,14 @@ const Hero = () => {
                 Semplifica la scuola <span className="text-[#2796e5]">con un click</span>
             </h1>
             <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase">
-                Velocizza le attività didattiche e rendi l'apprendimento più accessibile e interessante con l'Intelligenza Artificiale.
-                Crea quiz e lezioni coinvolgenti utilizzando video YouTube, pagine di Wikipedia, PDF e dispense online con un semplice click.
+                {/* Velocizza le attività didattiche e rendi l'apprendimento più accessibile e interessante con l'Intelligenza Artificiale.
+                Crea quiz e lezioni coinvolgenti utilizzando video YouTube, pagine di Wikipedia, PDF e dispense online con un semplice click. */}
+                Velocizza e rendi più accessibili le attività didattiche.
+                Crea lezioni coinvolgenti, outline, schemi e quiz,
+                utilizzando PDF, video YouTube,
+                pagine di Wikipedia, e-book
+                o i tuoi file salvati in Google Drive e Dropboox
+
             </p>
             <div className="flex flex-col mt-10 justify-center items-center gap-3 lg:w-[70%] w-full">
                 <p className="text-black lg:text-md text-sm uppercase text-center">

@@ -31,10 +31,17 @@ const UsageGuide = () => {
                     data-aos="flip-down" data-aos-once="false"
                 >
                     <h1 className="lg:text-4xl text-2xl font-bold text-center text-black capitalize">
-                        Come utilizzare FastSchool
+                        {/* Come utilizzare FastSchool */}
+                        Come usare FastSchool
+
                     </h1>
                     <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase ">
-                        Facile e veloce. Per utilizzare FastSchool AI tutto quello che devi fare è incollare l'URL del contenuto scelto nell'apposito spazio, attendere qualche secondo e il gioco è fatto. Puoi ripetere l'operazione più e più volte e una volta che sei soddisfatto del risultato, salva e scarica le tue lezioni.
+                        {/* Facile e veloce. Per utilizzare FastSchool AI tutto quello che devi fare è incollare l'URL del contenuto scelto nell'apposito spazio, attendere qualche secondo e il gioco è fatto. Puoi ripetere l'operazione più e più volte e una volta che sei soddisfatto del risultato, salva e scarica le tue lezioni. */}
+                        Inserisci il contenuto scelto nell'apposito spazio,
+                        attendi qualche secondo ed il gioco è fatto.
+                        Puoi ripetere l'operazione infinite volte
+                        e solo quando sarai soddisfatto del risultato,
+                        salva e scarica le tua lezione.
                     </p>
                 </div>
             </section>
@@ -62,10 +69,15 @@ const UsageGuide = () => {
                 >
                     <h1 className="lg:text-4xl text-2xl font-bold text-center text-black capitalize">
                         Cosa fa FastSchool
+
                     </h1>
                     <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase">
-                        L’intelligenza artificiale entra in empatia con un insegnante.
-                        In pochi secondi avrai a tua disposizione un elaborato sull'argomento prescelto, una serie di quiz suddivisi in categorie, uno schema per semplificare lo studio e diversi consigli per creare fantastiche attività didattiche.
+                        {/* L’intelligenza artificiale entra in empatia con un insegnante.
+                        In pochi secondi avrai a tua disposizione un elaborato sull'argomento prescelto, una serie di quiz suddivisi in categorie, uno schema per semplificare lo studio e diversi consigli per creare fantastiche attività didattiche. */}
+                        Riduce il carico di lavoro e fa risparmiare tempo prezioso.
+                        In pochi secondi avrai a tua disposizione un elaborato
+                        per studiare o spiegare l'argomento scelto,
+                        numerosi quiz per allenarti, un outline con i punti sali
                     </p>
                 </div>
             </section>
