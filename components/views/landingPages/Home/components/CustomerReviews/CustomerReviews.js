@@ -20,11 +20,10 @@ const CustomerReviews = () => {
             };
 
             // fetch(`${link}/reviews`, requestOptions)
-            fetch(`http://127.0.0.1:5000/reviews`, requestOptions)
+            fetch(`https://flaskapinextjs.vercel.app/reviews`, requestOptions)
                 .then((response) => response.json())
                 .then((result) => {
                     setDefaultData(result)
-                    console.log("result", JSON.stringify(result));
                 })
                 .catch(error => console.log('error', error));
         } catch (error) {
@@ -97,14 +96,13 @@ const CustomerReviews = () => {
                 {defaultData.map((review, index) => {
                     const nameWithoutEmail = review.user_name.split('@')[0];
                     const nameWithoutNumbers = nameWithoutEmail.replace(/\d+/g, ''); // Remove numeric characters
-
                     return (
 
                         <div className="review_item" key={index} style={{ height: "157px" }}>
                             <div className="flex flex-col md:flex-row">
                                 <div className="md:w-2/3 text-left px-4 table">
                                     <div className="profile_img_div display_table_cell align-middle">
-                                        <Image alt="" width="100%" height="100%" src={review.gender.toLowerCase() == "male" ? ICONS.male_icon : ICONS.female_icon} />
+                                        <Image alt="" width="100%" height="100%" src={ review.gender == "Male" ? ICONS.male_icon : ICONS.female_icon} />
 
                                     </div>
                                     <div className="profile_text_div border-0 display_table_cell align-middle">

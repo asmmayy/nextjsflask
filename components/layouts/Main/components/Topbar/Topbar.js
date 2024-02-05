@@ -73,14 +73,14 @@ const Topbar = () => {
                         </Link>
                     )
                 }
-                {isLoggedIn && (
+                {/* {isLoggedIn && ( */}
                 <p
                     className={`text-red-500 uppercase lg:text-base text-xs font-bold cursor-pointer hover:scale-105 transition duration-200 ease-in-out`}
                     onClick={logout}
                 >
                     Esci
                 </p>
-                )}
+                {/* )} */}
             </div>
         </header>
     )

@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { LOGOS, ICONS } from "@/shared/constants";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { toast } from 'react-toastify';
 import { UserAuth } from '@/shared/context/AuthContext';
+import emailjs from 'emailjs-com';
 
 const JoinFastSchool = () => {
-
+    useEffect(() => {
+        // Initialize EmailJS with your user_id
+        emailjs.init('MjOxCmAuatmQMITOA'); // Replace with your actual User ID
+    }, []);
     const { user } = UserAuth();
     const router = useRouter();
     const [selectedPlan, setSelectedPlan] = useState('');
@@ -26,6 +30,33 @@ const JoinFastSchool = () => {
         }
     ]
 
+
+
+
+
+    const handleSendEmail = async () => {
+        try {
+            const templateParams = {
+                to_name: 'Evilz',
+                from_name: 'Faizan khan',
+                to_email: 'teamdeath720@gmail.com',
+                message_html: 'Hello, this is a test email!',
+            };
+
+            const response = await emailjs.send(
+                'service_zf4ud3b',   // Replace with your actual Service ID
+                'template_sjipg24',  // Replace with your actual Template ID
+                templateParams
+            );
+
+            console.log('SUCCESS!', response.status, response.text);
+        } catch (error) {
+            console.error('Error sending email:', error);
+        }
+    };
+
+
+
     // const response = await fetch(`/api/subscribe/${selectedPlan}/${user?.user_id}`, {
     const handleContinue = async () => {
         if (!selectedPlan) {
@@ -35,20 +66,22 @@ const JoinFastSchool = () => {
         if (router.pathname === '/') {
             router.push('/signup');
         }
+        console.log("selectedPlan", selectedPlan);
 
         try {
-
             // send both lookup_key and user_id as query params
             let formData = new FormData();
             formData.append('lookup_key', selectedPlan);
+
             formData.append("user_id", user?.user_id);
-            fetch("http://127.0.0.1:5000/create-checkout-session", {
+
+            fetch("https://flaskapinextjs.vercel.app/create-checkout-session", {
                 method: 'POST',
                 body: formData
             }).then((response) => {
                 response.json().then(({ checkout_session }) => {
                     console.log("response", checkout_session);
-                    window.location.href = checkout_session.url
+                    // window.location.href = checkout_session.url
                 })
             })
         } catch (error) {
@@ -70,7 +103,6 @@ const JoinFastSchool = () => {
             data-aos-easing="ease-in-sine" data-aos="flip-up" data-aos-once="false"
             data-aos-delay="50" data-aos-duration="1000"
         >
-
             <Image
                 src={LOGOS.fastSchool_logo_black}
                 alt="fast school logo"
@@ -109,7 +141,7 @@ const JoinFastSchool = () => {
         focus:outline-none 
         focus:shadow-outline
     `}
-        
+
                 onClick={handleContinue}
                 disabled={!selectedPlan}
             >
