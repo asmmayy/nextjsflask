@@ -19,9 +19,6 @@ const UsageGuide = () => {
                 shadow-lg
                   "
             >
-                {/* shadow-slate-600 */}
-                {/* border-gray-300  */}
-                {/* rounded-2xl border */}
                 <div className="lg:w-[40%] w-[90%] max-w-[20rem] min-h-[15rem] border border-gray-400 rounded-md">
                     <Image alt="" src={IMAGES.fastschoolPic} width="100%" />
                 </div>
@@ -31,12 +28,10 @@ const UsageGuide = () => {
                     data-aos="flip-down" data-aos-once="false"
                 >
                     <h1 className="lg:text-4xl text-2xl font-bold text-center text-black capitalize">
-                        {/* Come utilizzare FastSchool */}
                         Come usare FastSchool
-
                     </h1>
                     <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase ">
-                        {/* Facile e veloce. Per utilizzare FastSchool AI tutto quello che devi fare è incollare l'URL del contenuto scelto nell'apposito spazio, attendere qualche secondo e il gioco è fatto. Puoi ripetere l'operazione più e più volte e una volta che sei soddisfatto del risultato, salva e scarica le tue lezioni. */}
+                       
                         Inserisci il contenuto scelto nell'apposito spazio,
                         attendi qualche secondo ed il gioco è fatto.
                         Puoi ripetere l'operazione infinite volte
@@ -100,61 +95,55 @@ const UsageGuide = () => {
                     data-aos-easing="ease-in-sine" data-aos="fade-right" data-aos-once="false"
                     data-aos-delay="50" data-aos-duration="1000"
                 >
-                    <h1 className="lg:text-4xl text-2xl font-bold text-center text-black capitalize">
+                    <h1 className="lg:text-4xl text-2xl font-bold text-black capitalize">
                         Consigli
 
                     </h1>
-                    <div className="w-full max-w-screen-xl mx-auto px-6">
-                        <div className="flex justify-center p-4 px-3 py-10">
-                            <div className="w-full max-w-md">
-                                <div className="px-3 py-2 mb-4">
-                                    <div className="block text-gray-700 text-lg font-semibold py-2 px-2">
-                                        Usa FastSchool per :
+                    <div className="block text-gray-700 text-lg font-semibold py-2 px-2">
+                        Usa FastSchool per :
 
-                                    </div>
+                    </div>
 
-                                    <div className="py-3 text-sm">
-                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
-                                            <div className="flex-grow font-medium px-2">creare verifiche</div>
-                                        </div>
-                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
-                                            <div className="flex-grow font-medium px-2">creare lezioni per la tua classe</div>
-                                        </div>
-                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                            <span className="bg-green-400  h-2 w-2 m-2 rounded-full"></span>
-                                            <div className="flex-grow font-medium px-2">
-                                                studiare lunghi manuali, libri o corsi
+                    <div className="py-3 text-sm flex flex-wrap">
+                        <div className="flex justify-start cursor-cross-hair
+                                         text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                            <div className="flex-grow font-medium px-2 capitalize">creare verifiche</div>
+                        </div>
+                        <div className="flex justify-start cursor-cross-hair text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                            <div className="flex-grow font-medium px-2 capitalize">creare lezioni per la tua classe</div>
+                        </div>
+                        <div className="flex justify-start cursor-cross-hair text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                            <span className="bg-green-400  h-2 w-2 m-2 rounded-full"></span>
+                            <div className="flex-grow font-medium px-2 capitalize">
+                                studiare lunghi manuali, libri o corsi
 
-                                            </div>
-                                        </div>
-                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                            <span className="bg-green-400  h-2 w-2 m-2 rounded-full"></span>
-                                            <div className="flex-grow font-medium px-2">
-                                                semplificare il tuo erasmus in Italia
-
-                                            </div>
-                                        </div>
-                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
-                                            <div className="flex-grow font-medium px-2">
-                                                qualificare velocemente il personale aziendale
-
-                                            </div>
-                                        </div>
-                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
-                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
-                                            <div className="flex-grow font-medium px-2">
-                                                creare contenuti di qualità per il tuo busines
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
+                        <div className="flex justify-start cursor-cross-hair text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                            <span className="bg-green-400  h-2 w-2 m-2 rounded-full"></span>
+                            <div className="flex-grow font-medium px-2 capitalize">
+                                semplificare il tuo erasmus in Italia
+
+                            </div>
+                        </div>
+                        <div className="flex justify-start cursor-cross-hair text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                            <div className="flex-grow font-medium px-2 capitalize">
+                                qualificare velocemente il personale aziendale
+
+                            </div>
+                        </div>
+                        <div className="flex justify-start cursor-cross-hair text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                            <div className="flex-grow font-medium px-2 capitalize">
+                                creare contenuti di qualità per il tuo busines
+
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>

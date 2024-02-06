@@ -75,7 +75,7 @@ const JoinFastSchool = () => {
 
             formData.append("user_id", user?.user_id);
 
-            fetch("http://127.0.0.1:5000/create-checkout-session", {
+            fetch("flaskapinextjs.vercel.app/create-checkout-session", {
                 method: 'POST',
                 body: formData
             }).then((response) => {
