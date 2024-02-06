@@ -29,7 +29,7 @@ const Hero = () => {
             data-aos-easing="ease-in-sine" data-aos="zoom-out-up" data-aos-once="false"
         >
             <h1 className="lg:text-4xl text-2xl font-bold text-center text-black">
-                Semplifica la scuola <span className="text-[#2796e5]">con un click</span>
+            Semplifica l’insegnamento e l’apprendimento <span className="text-[#2796e5]">con un click</span>
             </h1>
             <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase">
                 {/* Velocizza le attività didattiche e rendi l'apprendimento più accessibile e interessante con l'Intelligenza Artificiale.

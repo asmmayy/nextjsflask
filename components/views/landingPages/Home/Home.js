@@ -24,7 +24,7 @@ const Home = () => {
                 <ContainerCustom className="relative">
                     <JoinFastSchool />
                 </ContainerCustom>
-                <ContainerCustom className="relative" style={{ height: '200px' }}>
+                <ContainerCustom className="relative" style={{ height: '220px', overflow: 'hidden' }}>
                     <CustomerReviews />
                 </ContainerCustom>
                 <ContainerCustom className="relative" id="contact-form">
