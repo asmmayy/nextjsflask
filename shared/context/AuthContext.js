@@ -15,7 +15,7 @@ export const AuthContextProvider = ({ children }) => {
     const login = async (email, password, teacher_type) => {
         setLoading(true);
         try {
-            const response = await fetch(`https://flask-hello-world-omega-ivory.vercel.app/login`, {
+            const response = await fetch(`https://flaskapinextjs.vercel.app/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ export const AuthContextProvider = ({ children }) => {
                     maxAge: 60 * 60,
                     path: '/',
                 })
-                setUser({ user_id, user_email : email, subscription_active, subscription_type, demo_active });
+                setUser({ user_id, user_email: email, subscription_active, subscription_type, demo_active });
                 router.push('/dashboard');
             } else {
                 throw new Error(data.message);
