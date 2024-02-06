@@ -4,9 +4,9 @@ const CookieConsentContainer = () => {
     return (
         <CookieConsent
             location='bottom'
-            buttonText='Accept All'
+            buttonText='Accetto'
             cookieName='userConsentCookie'
-            style={{ 
+            style={{
                 backdropFilter: 'blur(10px)',
                 backgroundColor: 'rgba(255,255,255, 0.3)',
                 color: '#fff',
@@ -17,19 +17,19 @@ const CookieConsentContainer = () => {
                 alignItems: 'center',
                 padding: '15px',
                 zIndex: '999999',
-            }} 
-            buttonStyle={{ 
+            }}
+            buttonStyle={{
                 backgroundColor: '#3B82F6',
-                color: '#fff', 
-                fontSize: '18px', 
-                fontWeight: 'bold', 
-                padding: '10px', 
-                border: 'none', 
-                borderRadius: '5px' 
-            }} 
+                color: '#fff',
+                fontSize: '18px',
+                fontWeight: 'bold',
+                padding: '10px',
+                border: 'none',
+                borderRadius: '5px'
+            }}
             expires={150}
         >
-            This website uses cookies to enhance the user experience.
+            Questo sito utilizza i cookie per migliorare l'esperienza dell'utente.
             {/* <a 
                 href="/cookie-policy" 
                 style={{
