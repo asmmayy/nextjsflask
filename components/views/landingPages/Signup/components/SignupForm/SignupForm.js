@@ -39,7 +39,7 @@ const SignupForm = () => {
                 },
                 body: JSON.stringify({ email, password, teacher_type: role })
             });
-            
+
             const data = await response.json();
 
             if (response.status !== 200 && response.status !== 201) {
@@ -57,13 +57,13 @@ const SignupForm = () => {
     };
 
     return (
-        <section 
+        <section
             className="flex flex-col items-center justify-center max-w-3xl mx-auto pt-[8rem] gap-2"
         >
             <div className="max-w-sm w-full bg-white rounded-lg shadow-md p-8 m-4">
                 <h1 className="text-4xl text-center text-gray-800 font-bold mb-6">Signup</h1>
                 <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-                    <input 
+                    <input
                         type="email"
                         placeholder="Email"
                         className="text-gray-800 text-sm p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 transition duration-200"
@@ -72,38 +72,38 @@ const SignupForm = () => {
                         required
                     />
                     <div className='relative w-full'>
-                        <input 
-                            type={!isHidePassword ? "password" :"text"}
+                        <input
+                            type={!isHidePassword ? "password" : "text"}
                             placeholder="Password"
                             className="text-gray-800 text-sm p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 transition duration-200 w-full"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
-                        <button onClick={()=>setIsHidePassword(!isHidePassword)} type='button' className='absolute inset-y-0 right-3'>
+                        <button onClick={() => setIsHidePassword(!isHidePassword)} type='button' className='absolute inset-y-0 right-3'>
                             {
                                 !isHidePassword ? <i className="fa fa-eye" aria-hidden="true"></i> :
-                                <i className="fa fa-eye-slash" aria-hidden="true"></i>
+                                    <i className="fa fa-eye-slash" aria-hidden="true"></i>
                             }
                         </button>
                     </div>
                     <div className='relative w-full'>
-                        <input 
-                            type={!isHideConfirmPassword ? "password" :"text"}
+                        <input
+                            type={!isHideConfirmPassword ? "password" : "text"}
                             placeholder="Confirm Password"
                             className="text-gray-800 text-sm p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 transition duration-200 w-full"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                             required
                         />
-                        <button onClick={()=>setIsHideConfirmPassword(!isHideConfirmPassword)} type='button' className='absolute inset-y-0 right-3'>
+                        <button onClick={() => setIsHideConfirmPassword(!isHideConfirmPassword)} type='button' className='absolute inset-y-0 right-3'>
                             {
                                 !isHideConfirmPassword ? <i className="fa fa-eye" aria-hidden="true"></i> :
-                                <i className="fa fa-eye-slash" aria-hidden="true"></i>
+                                    <i className="fa fa-eye-slash" aria-hidden="true"></i>
                             }
                         </button>
                     </div>
-                    <select 
+                    <select
                         className="text-gray-800 text-sm p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 transition duration-200 capitalize"
                         value={role}
                         onChange={(e) => setRole(e.target.value)}
@@ -149,7 +149,7 @@ const SignupForm = () => {
                                 </svg>
                             </div>
                         ) : (
-                            <button 
+                            <button
                                 className={`px-6 py-3 rounded-lg w-full text-white ${loading || !acceptPrivacyPolicy || !acceptTerms ? 'btn-disabled' : 'bg-blue-500 hover:bg-blue-600'}`}
                                 disabled={loading || !acceptPrivacyPolicy || !acceptTerms}
                             >
@@ -159,12 +159,13 @@ const SignupForm = () => {
                     </div>
                 </form>
                 <p className="mt-4 text-center text-black">
-                    Already have an account? 
-                    <Link href="/login"className="text-blue-500 hover:text-blue-600 transition duration-200 ml-1">
+                    Already have an account?
+                    <Link href="/login" className="text-blue-500 hover:text-blue-600 transition duration-200 ml-1">
                         Login
                     </Link>
                 </p>
             </div>
+           
         </section>
     );
 }

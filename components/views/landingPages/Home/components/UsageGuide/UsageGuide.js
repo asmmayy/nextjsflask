@@ -147,39 +147,7 @@ const UsageGuide = () => {
                     </div>
                 </div>
             </section>
-            <section
-                className="flex flex-col 
-                items-center 
-                justify-between
-                max-w-5xl
-                bg-gray-100
-                mx-auto gap-4 p-6 
-                text-gray-900
-                rounded-lg 
-                shadow-lg
-                lg:flex-row-reverse
-                  "
-            >
-
-                <div className="flex flex-col p-4 lg:w-[100%] w-full"
-                    data-aos-easing="ease-in-sine" data-aos="fade-right" data-aos-once="false"
-                    data-aos-delay="50" data-aos-duration="1000"
-                >
-
-                    <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase">
-                        Ricorda di scegliere il tono più adatto alle tue esigenze,
-                        otterrai risultati sorprendenti!
-                        Conformemente alla tua selezione
-                        cambierà il lessico, la sintassi, le formule linguistiche,
-                        l’uso della punteggiatura e la difficoltà dei quiz.
-                        Potrai scegliere tra 4 tipologie di tono :
-                        Base = Scuola elementare
-                        Comune = Scuola media
-                        Avanzato = Scuola superiore
-                        Specialistico = Università
-                    </p>
-                </div>
-            </section>
+           
         </div>
     )
 }
