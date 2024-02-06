@@ -104,14 +104,58 @@ const UsageGuide = () => {
                         Consigli
 
                     </h1>
-                    <p className="mt-4 lg:text-lg text-sm text-center text-black uppercase">
-                        creare verifiche
-                        creare lezioni per la tua classe
-                        studiare lunghi manuali, libri o corsi
-                        semplificare il tuo erasmus in Italia
-                        qualificare velocemente il personale aziendale
-                        creare contenuti di qualità per il tuo busines
-                    </p>
+                    <div className="w-full max-w-screen-xl mx-auto px-6">
+                        <div className="flex justify-center p-4 px-3 py-10">
+                            <div className="w-full max-w-md">
+                                <div className="px-3 py-2 mb-4">
+                                    <div className="block text-gray-700 text-lg font-semibold py-2 px-2">
+                                        Usa FastSchool per :
+
+                                    </div>
+
+                                    <div className="py-3 text-sm">
+                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                                            <div className="flex-grow font-medium px-2">creare verifiche</div>
+                                        </div>
+                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                                            <div className="flex-grow font-medium px-2">creare lezioni per la tua classe</div>
+                                        </div>
+                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                                            <span className="bg-green-400  h-2 w-2 m-2 rounded-full"></span>
+                                            <div className="flex-grow font-medium px-2">
+                                                studiare lunghi manuali, libri o corsi
+
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                                            <span className="bg-green-400  h-2 w-2 m-2 rounded-full"></span>
+                                            <div className="flex-grow font-medium px-2">
+                                                semplificare il tuo erasmus in Italia
+
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                                            <div className="flex-grow font-medium px-2">
+                                                qualificare velocemente il personale aziendale
+
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-start cursor-pointer text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+                                            <span className="bg-green-400 h-2 w-2 m-2 rounded-full"></span>
+                                            <div className="flex-grow font-medium px-2">
+                                                creare contenuti di qualità per il tuo busines
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section
